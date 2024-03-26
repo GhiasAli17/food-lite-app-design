@@ -43,3 +43,41 @@ button{
 button:hover{
   cursor: pointer;
 }
+
+
+.hero_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/background_image.png");
+  height: 362px;
+  opacity: 0.93;
+
+}
+
+.hero_section.detail {
+  background-image: url("/images/product_detail.png");
+}
+
+.hero_section p {
+  color: white;
+  font-size: 40px;
+  font-weight: var(--primary-font-weight);
+  line-height: 48.41px;
+  width: 898px;
+  text-align: center;
+}
+
+.products_section{
+  margin-top: 77px;
+  margin-left: 77px;
+  margin-right: 77px;
+  
+}
+
+button a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  
+}

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const ProductCard = ({url}:{url:string}) => {
@@ -10,7 +11,9 @@ const ProductCard = ({url}:{url:string}) => {
                 <div className='card_content'>
                     <h4>Waffles</h4>
                     <p>Receita bacana pra comer com os amigos de manhã.</p>
-                    <button>View Recipe</button>
+                    <button>
+                        <Link href="/detail">
+                    View Recipe</Link></button>
                 </div>
 
                
