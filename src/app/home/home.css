@@ -1,9 +1,11 @@
 
 .product_card{
     background-color: #F5F2F2;
-    width: 353px;
+    max-width: 353px;
     border-radius: 33px;
     margin-bottom: 38px;
+    margin-right: 38px; 
+    flex: 1;
 }
 
 
@@ -42,10 +44,21 @@
 
 .products_container {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* gap: 38px;
-    margin-left: 38px;
-    margin-right: 38px; */
+    margin-left: 38px;*/
+    /* margin-right: 38px;  */
     flex-wrap: wrap;
    
 }
+
+@media (max-width:800px) {
+    .products_container{
+      margin-top: 17px;
+      margin-left: 37px;
+      margin-right: 1px;
+      
+    }
+  
+   
+  }

@@ -9,15 +9,18 @@ const Header = () => {
         <div className='bottom_header'>
             <div className='header_left'>
              <img src='/icons/Ico.png' className='header_ico' width={28} height={26}/>
+             
              <span className='desktop'>Delícias à Mesa</span>
             </div>
             <div className='desktop'>
               <nav>
+
                 <ul>
                     <li><b><Link href="/">Home</Link></b></li>
                     <li><b><Link href="/">Recent</Link></b></li>
                     <li><b><Link href="/">Editor Choice</Link></b></li>
                 </ul>
+                
               </nav>
             </div>
           
@@ -34,6 +37,7 @@ const Header = () => {
             </div>
             <div className='hamburger'>
               <img src='/icons/hamburger_ico.png' />
+              {/* <img src='/icons/cross_ico.png' width={28} height={26}/> */}
             </div>
 
         </div>

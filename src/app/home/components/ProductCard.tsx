@@ -6,7 +6,7 @@ const ProductCard = ({url}:{url:string}) => {
    
             <div className="product_card">
                 <div >
-                    <img src={url} height={212} width={353}/>
+                    <img src={url} height={212} width="100%"/>
                 </div>
                 <div className='card_content'>
                     <h4>Waffles</h4>

@@ -69,9 +69,9 @@ button:hover{
 }
 
 .products_section{
-  margin-top: 77px;
-  margin-left: 77px;
-  margin-right: 77px;
+  margin-top: 87px;
+  margin-left: 107px;
+
   
 }
 
@@ -81,3 +81,15 @@ button a{
   color: black;
   
 }
+
+@media (max-width:500px) {
+  .products_section{
+    margin-top: 17px;
+    margin-left: 37px;
+    margin-right: 1px;
+    
+  }
+
+ 
+}
+
