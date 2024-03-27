@@ -25,7 +25,7 @@ const Header = () => {
                                 aria-label="Search Icon">
                                 <path
                                     d="M15 15L11.8525 11.8525M13.5 7.875C13.5 4.7684 10.9816 2.25 7.875 2.25C4.7684 2.25 2.25 4.7684 2.25 7.875C2.25 10.9816 4.7684 13.5 7.875 13.5C10.9816 13.5 13.5 10.9816 13.5 7.875Z"
-                                    stroke="#6d6d6d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="#6d6d6d" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round">
                                 </path>
                             </svg>
                 <input type='text' placeholder='Search' className='search_input' />

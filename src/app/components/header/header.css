@@ -20,6 +20,13 @@ div nav ul li {
     text-decoration: none;
     list-style: none;
 }
+
+div nav ul li:hover {
+    border-bottom: 2px solid #FFDB63;
+    /* transition: border-bottom 2s; */
+    transition: transform 250ms ease-in-out;
+}
+
 div nav ul li b a {
     color: black;
 }
