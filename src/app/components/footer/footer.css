@@ -58,5 +58,24 @@ cursor: pointer;
     justify-content: space-between;
     list-style: none;
     gap: 10px;
-    flex-wrap: wrap;
+}
+
+@media (max-width:1000px) {
+   footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding-left: 50%;
+   padding-right: 50%;
+   }
+   .footer_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .footer_left p b{
+    display: none !important;
+   }
 }

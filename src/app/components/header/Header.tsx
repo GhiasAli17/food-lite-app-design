@@ -9,9 +9,9 @@ const Header = () => {
         <div className='bottom_header'>
             <div className='header_left'>
              <img src='/icons/Ico.png' className='header_ico' width={28} height={26}/>
-             <span>Delícias à Mesa</span>
+             <span className='desktop'>Delícias à Mesa</span>
             </div>
-            <div>
+            <div className='desktop'>
               <nav>
                 <ul>
                     <li><b><Link href="/">Home</Link></b></li>
@@ -20,7 +20,8 @@ const Header = () => {
                 </ul>
               </nav>
             </div>
-            <div className='right_header'>
+          
+            <div className='right_header desktop'>
                 <svg className='search_ico' width="17.6" height="17.6" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
                                 aria-label="Search Icon">
                                 <path
@@ -29,6 +30,10 @@ const Header = () => {
                                 </path>
                             </svg>
                 <input type='text' placeholder='Search' className='search_input' />
+                
+            </div>
+            <div className='hamburger'>
+              <img src='/icons/hamburger_ico.png' />
             </div>
 
         </div>
