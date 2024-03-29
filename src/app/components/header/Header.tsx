@@ -1,7 +1,9 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import './header.css'
 import Link from 'next/link'
 const Header = () => {
+  const [isClicked, setIsClicked] = useState(false)
   return (
     <header>
         <div className='top_header'></div>
@@ -12,13 +14,14 @@ const Header = () => {
              
              <span className='desktop'>Delícias à Mesa</span>
             </div>
-            <div className='desktop'>
+            <div className={`${isClicked?"show":"desktop"}`}>
               <nav>
 
                 <ul>
-                    <li><b><Link href="/">Home</Link></b></li>
-                    <li><b><Link href="/">Recent</Link></b></li>
-                    <li><b><Link href="/">Editor Choice</Link></b></li>
+                    <li className='close_menu' onClick={()=>setIsClicked(false)}> <img src='/icons/cross_ico.png' width={28} height={26}/></li>
+                    <li onClick={()=>setIsClicked(false)}><b><Link href="/">Home</Link></b></li>
+                    <li onClick={()=>setIsClicked(false)}><b><Link href="/">Recent</Link></b></li>
+                    <li onClick={()=>setIsClicked(false)}><b><Link href="/">Editor Choice</Link></b></li>
                 </ul>
                 
               </nav>
@@ -35,9 +38,9 @@ const Header = () => {
                 <input type='text' placeholder='Search' className='search_input' />
                 
             </div>
-            <div className='hamburger'>
+            <div className='hamburger' onClick={()=>setIsClicked(true)}>
               <img src='/icons/hamburger_ico.png' />
-              {/* <img src='/icons/cross_ico.png' width={28} height={26}/> */}
+             
             </div>
 
         </div>
